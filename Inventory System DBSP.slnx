@@ -1,3 +1,7 @@
 <Solution>
+<<<<<<< Updated upstream
   <Project Path="Inventory System DBSP/Inventory System DBSP.csproj" />
+=======
+  <Project Path="Inventory System DBSP/Inventory System DBSP.csproj" Id="145f65b5-874c-4ae7-8ba9-f55f6ba40bd9" />
+>>>>>>> Stashed changes
 </Solution>
