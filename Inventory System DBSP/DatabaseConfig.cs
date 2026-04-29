@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace Inventory_System_DBSP
 {

@@ -42,5 +42,10 @@ namespace Inventory_System_DBSP
                 MessageBox.Show("Database එකට සම්බන්ධ වීමට නොහැක: \n" + ex.Message, "දෝෂයකි", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void materialButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
