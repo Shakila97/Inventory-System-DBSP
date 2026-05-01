@@ -16,7 +16,6 @@
     <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Application\BLL\" />
     <Folder Include="SQL_Scripts\" />
   </ItemGroup>
   <ItemGroup>
