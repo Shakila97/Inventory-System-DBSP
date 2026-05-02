@@ -1,0 +1,12 @@
+C:\Users\User\source\repos\Inventory Management System IMS\obj\Debug\Inventory Management System IMS.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Inventory Management System IMS\obj\Debug\Inventory_Management_System_IMS.Form1.resources
+C:\Users\User\source\repos\Inventory Management System IMS\obj\Debug\Inventory_Management_System_IMS.Properties.Resources.resources
+C:\Users\User\source\repos\Inventory Management System IMS\obj\Debug\Inventory Management System IMS.csproj.GenerateResource.cache
+C:\Users\User\source\repos\Inventory Management System IMS\obj\Debug\Inventory Management System IMS.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Inventory Management System IMS\obj\Debug\InventoryManagementSystem.frmWelcome.resources
+C:\Users\User\source\repos\Inventory Management System IMS\obj\Debug\InventorySystem.Presentation.frmLogin.resources
+C:\Users\User\source\repos\Inventory Management System IMS\obj\Debug\InventorySystem.Presentation.frmCustomerDirectory.resources
+C:\Users\User\source\repos\Inventory Management System IMS\obj\Debug\Inventory_Management_System_IMS.Presentation.frmProductInventory.resources
+C:\Users\User\source\repos\Inventory Management System IMS\obj\Debug\InventorySystem.Presentation.frmSalesTransaction.resources
+C:\Users\User\source\repos\Inventory Management System IMS\obj\Debug\InventorySystem.Presentation.frmStockAdjustment.resources
+C:\Users\User\source\repos\Inventory Management System IMS\obj\Debug\Inventory_Management_System.frmDashboard.resources
