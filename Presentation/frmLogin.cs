@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using InventorySystem.BLL;
 
-namespace InventorySystem.Presentation
+namespace Inventory_Management_System_IMS
 {
     public partial class frmLogin : Form
     {

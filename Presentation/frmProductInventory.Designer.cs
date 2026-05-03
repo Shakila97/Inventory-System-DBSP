@@ -1,4 +1,4 @@
-﻿namespace Inventory_Management_System_IMS.Presentation
+﻿namespace Inventory_Management_System_IMS
 {
     partial class frmProductInventory
     {

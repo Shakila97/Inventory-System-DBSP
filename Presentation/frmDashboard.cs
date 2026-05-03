@@ -9,7 +9,7 @@ using System.Windows.Forms.DataVisualization.Charting;
 using InventorySystem.BLL;
 
 
-namespace Inventory_Management_System
+namespace Inventory_Management_System_IMS
 {
     public partial class frmDashboard : Form
     {

@@ -1,11 +1,11 @@
-﻿namespace InventorySystem.Presentation
+﻿namespace Inventory_Management_System_IMS
 {
     partial class frmLogin
     {
         private System.ComponentModel.IContainer components = null;
         private System.Windows.Forms.Panel panelLogin;
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.TextBox txtPassword;
@@ -29,7 +29,7 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
-            this.lblUsername = new System.Windows.Forms.Label();
+            this.lblStatus = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelLogin.SuspendLayout();
             this.SuspendLayout();
@@ -43,7 +43,7 @@
             this.panelLogin.Controls.Add(this.txtPassword);
             this.panelLogin.Controls.Add(this.txtUsername);
             this.panelLogin.Controls.Add(this.lblPassword);
-            this.panelLogin.Controls.Add(this.lblUsername);
+            this.panelLogin.Controls.Add(this.lblStatus);
             this.panelLogin.Controls.Add(this.lblTitle);
             this.panelLogin.Location = new System.Drawing.Point(212, 106);
             this.panelLogin.Name = "panelLogin";
@@ -104,15 +104,15 @@
             this.lblPassword.TabIndex = 2;
             this.lblPassword.Text = "Password";
             // 
-            // lblUsername
+            // lblStatus
             // 
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lblUsername.Location = new System.Drawing.Point(20, 95);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(65, 15);
-            this.lblUsername.TabIndex = 1;
-            this.lblUsername.Text = "Username";
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblStatus.Location = new System.Drawing.Point(20, 95);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(65, 15);
+            this.lblStatus.TabIndex = 1;
+            this.lblStatus.Text = "Username";
             // 
             // lblTitle
             // 

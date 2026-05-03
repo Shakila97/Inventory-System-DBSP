@@ -1,27 +1,30 @@
 ﻿using System;
 using System.Windows.Forms;
 using Inventory_Management_System_IMS;
-using InventoryManagementSystem;
 using InventorySystem.Presentation;
 
-namespace InventorySystem
+namespace Inventory_Management_System_IMS
 {
     internal static class Program
     {
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            // 'Application' වෙනුවට 'System.Windows.Forms.Application' ලෙස යොදන්න
+            System.Windows.Forms.Application.EnableVisualStyles();
+            System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(false);
 
-            // Global error trapping for unhandled UI/Domain exceptions
-            Application.ThreadException += (s, e) =>
-                MessageBox.Show($"UI Thread Error:\n{e.Exception.Message}", "Critical", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            // Global error trapping
+            System.Windows.Forms.Application.ThreadException += (s, e) =>
+                MessageBox.Show($"UI Thread Error:\n{e.Exception.Message}", "Critical", MessageBoxButtons.OK);
+
             AppDomain.CurrentDomain.UnhandledException += (s, e) =>
-                MessageBox.Show($"Fatal Runtime Error:\n{((Exception)e.ExceptionObject).Message}", "Fatal", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Fatal Runtime Error:\n{((Exception)e.ExceptionObject).Message}", "Fatal", MessageBoxButtons.OK);
 
-            // Entry point per Blueprint: Login → Main Menu
-            Application.Run(new frmWelcome());
+            // Entry point: Login Form එක හරහා ආරම්භ වේ
+            System.Windows.Forms.Application.Run(new frmLogin());
         }
     }
-}
+
+
+ }

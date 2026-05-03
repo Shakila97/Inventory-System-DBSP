@@ -1,12 +1,12 @@
 ﻿using Inventory_Management_System_IMS.Application.BLL;
-using Inventory_Management_System_IMS.Application.DAL;
-using InventorySystem.DAL;
+    
+using InventorySystem.DAL;  
 using System;
 using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Inventory_Management_System_IMS.Presentation
+namespace Inventory_Management_System_IMS
 {
     public partial class frmProductInventory : Form
     {
@@ -45,10 +45,16 @@ namespace Inventory_Management_System_IMS.Presentation
             try
             {
                 DataTable dtCategories = _productBLL.GetAllCategories();
+
+                // "All Categories" පේළිය DataTable එකටම නිවැරදිව එක් කිරීම
+                DataRow dr = dtCategories.NewRow();
+                dr["CategoryName"] = "All Categories";
+                dr["CategoryID"] = 0;
+                dtCategories.Rows.InsertAt(dr, 0);
+
                 cmbCategory.DataSource = dtCategories;
                 cmbCategory.DisplayMember = "CategoryName";
                 cmbCategory.ValueMember = "CategoryID";
-                cmbCategory.Items.Insert(0, new DataRowView(null, "All Categories"));
                 cmbCategory.SelectedIndex = 0;
             }
             catch (Exception ex)
@@ -64,11 +70,11 @@ namespace Inventory_Management_System_IMS.Presentation
             dgvInventory.AllowUserToAddRows = false;
             dgvInventory.ReadOnly = true;
 
-            // Highlight low stock rows
+            // අඩු තොග (Low stock) ඇති පේළි වර්ණ ගැන්වීම
             foreach (DataGridViewRow row in dgvInventory.Rows)
             {
-                if (row.Cells["UnitsInStock"].Value != null &&
-                    row.Cells["ReorderLevel"].Value != null)
+                if (row.Cells["UnitsInStock"].Value != DBNull.Value &&
+                    row.Cells["ReorderLevel"].Value != DBNull.Value)
                 {
                     int stock = Convert.ToInt32(row.Cells["UnitsInStock"].Value);
                     int reorder = Convert.ToInt32(row.Cells["ReorderLevel"].Value);
@@ -83,7 +89,7 @@ namespace Inventory_Management_System_IMS.Presentation
 
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
-            OpenProductDialog(0); // 0 = new product
+            OpenProductDialog(0); // 0 = අලුත් භාණ්ඩයක් සඳහා
         }
 
         private void btnEditProduct_Click(object sender, EventArgs e)
@@ -148,8 +154,14 @@ namespace Inventory_Management_System_IMS.Presentation
             try
             {
                 string searchQuery = txtSearch.Text.Trim();
-                int categoryID = cmbCategory.SelectedIndex > 0 ?
-                    Convert.ToInt32(((DataRowView)cmbCategory.SelectedItem).Row["CategoryID"]) : 0;
+                int categoryID = 0;
+
+                // ComboBox එකෙන් තෝරාගත් Category ID එක ලබා ගැනීම
+                if (cmbCategory.SelectedIndex > 0)
+                {
+                    DataRowView selectedRow = (DataRowView)cmbCategory.SelectedItem;
+                    categoryID = Convert.ToInt32(selectedRow["CategoryID"]);
+                }
 
                 _dtProducts = _productBLL.SearchProducts(searchQuery, categoryID);
                 dgvInventory.DataSource = _dtProducts;
@@ -162,19 +174,18 @@ namespace Inventory_Management_System_IMS.Presentation
             }
         }
 
-        private void tabLowStock_Click(object sender, EventArgs e)
-        {
-            LoadLowStockProducts();
-        }
-
         private void LoadLowStockProducts()
         {
             try
             {
-                DataTable dtLowStock = DatabaseHelper.GetDataTable("EXEC vw_LowStock");
-                dgvLowStock.DataSource = dtLowStock;
-                dgvLowStock.AutoResizeColumns();
-                dgvLowStock.AllowUserToAddRows = false;
+                // DatabaseHelper හරහා දත්ත ලබා ගැනීම (dgvLowStock යන නම UI එකේ ඇති බව තහවුරු කරගන්න)
+                DataTable dtLowStock = DAL.DatabaseHelper.GetDataTable("EXEC vw_LowStock");
+                if (dgvLowStock != null)
+                {
+                    dgvLowStock.DataSource = dtLowStock;
+                    dgvLowStock.AutoResizeColumns();
+                    dgvLowStock.AllowUserToAddRows = false;
+                }
             }
             catch (Exception ex)
             {
@@ -185,7 +196,9 @@ namespace Inventory_Management_System_IMS.Presentation
 
         private void OpenProductDialog(int productID)
         {
-            // Create dialog form programmatically or open existing form
+            // දැනට frmProductDialog පන්තිය නිර්මාණය කර නොමැති නිසා, 
+            // Error එක ඉවත් කිරීමට මෙය Comment කර ඇත.
+            /*
             using (frmProductDialog dialog = new frmProductDialog(productID))
             {
                 if (dialog.ShowDialog() == DialogResult.OK)
@@ -193,16 +206,13 @@ namespace Inventory_Management_System_IMS.Presentation
                     LoadProducts();
                 }
             }
+            */
+            MessageBox.Show("Product Dialog is not implemented yet.", "Notice");
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             LoadProducts();
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

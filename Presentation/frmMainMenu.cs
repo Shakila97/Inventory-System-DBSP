@@ -1,10 +1,9 @@
-﻿using Inventory_Management_System_IMS.Presentation;
-using InventorySystem.Presentation;
-using System;
+﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using InventorySystem.Presentation;
 
-namespace InventorySystem.Presentation
+namespace Inventory_Management_System_IMS
 {
     public partial class frmMainMenu : Form
     {
@@ -29,7 +28,7 @@ namespace InventorySystem.Presentation
         private void NavigateToForm(Form targetForm)
         {
             this.Hide();
-            targetForm.FormClosed += (s, e) => this.Show();
+            targetForm.FormClosed += (sender, ex) => this.Show();
             targetForm.ShowDialog();
         }
 
@@ -46,12 +45,32 @@ namespace InventorySystem.Presentation
             {
                 this.Hide();
                 var login = new frmLogin();
-                login.FormClosed += (s, e) => Application.Exit(); // Exit app if login closes
+                login.FormClosed += (s, e) => System.Windows.Forms.Application.Exit(); // Exit app if login closes
                 login.ShowDialog();
 
                 // If user logs in again, login form hides itself. Re-show main menu.
                 if (!login.Visible) this.Show();
             }
+        }
+        // Add these inside the frmMainMenu class to satisfy the Designer
+        private void btnStockAdjustment_Click(object sender, EventArgs e)
+        {
+            // TODO: Open Stock Adjustment Form
+        }
+
+        private void btnSalesTransaction_Click(object sender, EventArgs e)
+        {
+            // TODO: Open Sales Transaction Form
+        }
+
+        private void btnCustomerDirectory_Click(object sender, EventArgs e)
+        {
+            // TODO: Open Customer Directory Form
+        }
+
+        private void btnProductInventory_Click(object sender, EventArgs e)
+        {
+            // TODO: Open Product Inventory Form
         }
     }
 }
