@@ -1,0 +1,9 @@
+﻿CREATE TABLE Products (
+    ProductID INT IDENTITY(1,1) PRIMARY KEY,
+    CategoryID INT NOT NULL,
+    ProductName NVARCHAR(200) NOT NULL,
+    UnitPrice DECIMAL(10,2) NOT NULL,
+    UnitsInStock INT DEFAULT 0 NOT NULL,
+    ReorderLevel INT DEFAULT 10 NOT NULL,
+    CONSTRAINT FK_Products_Category FOREIGN KEY (CategoryID) REFERENCES Categories(CategoryID) ON DELETE NO ACTION
+);

@@ -1,0 +1,9 @@
+﻿CREATE TABLE SalesDetails (
+    SalesDetailID INT IDENTITY(1,1) PRIMARY KEY,
+    SaleID INT NOT NULL,
+    ProductID INT NOT NULL,
+    Quantity INT NOT NULL CHECK (Quantity > 0),
+    UnitPrice DECIMAL(10,2) NOT NULL,
+    CONSTRAINT FK_Details_Sale FOREIGN KEY (SaleID) REFERENCES Sales(SaleID) ON DELETE NO ACTION,
+    CONSTRAINT FK_Details_Product FOREIGN KEY (ProductID) REFERENCES Products(ProductID) ON DELETE NO ACTION
+);

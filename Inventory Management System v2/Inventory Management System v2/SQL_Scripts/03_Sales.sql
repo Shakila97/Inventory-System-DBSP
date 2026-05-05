@@ -1,0 +1,7 @@
+﻿CREATE TABLE Sales (
+    SaleID INT IDENTITY(1,1) PRIMARY KEY,
+    CustomerID INT NOT NULL,
+    SaleDate DATETIME DEFAULT GETDATE(),
+    TotalAmount DECIMAL(12,2) NOT NULL,
+    CONSTRAINT FK_Sales_Customer FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID) ON DELETE NO ACTION
+);
