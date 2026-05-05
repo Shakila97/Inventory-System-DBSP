@@ -1,0 +1,4 @@
+﻿CREATE NONCLUSTERED INDEX IX_Products_CategoryID ON Products(CategoryID);
+CREATE NONCLUSTERED INDEX IX_Sales_CustomerID ON Sales(CustomerID);
+CREATE NONCLUSTERED INDEX IX_Sales_SaleDate ON Sales(SaleDate);
+CREATE NONCLUSTERED INDEX IX_SalesDetails_SaleID ON SalesDetails(SaleID);

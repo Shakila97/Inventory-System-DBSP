@@ -3,6 +3,7 @@ using System.Data;
 using System.Data.SqlClient;
 using InventoryManagementSystemV2.Application.DAL;
 
+
 namespace InventoryManagementSystemV2.Application.BLL
 {
     /// <summary>

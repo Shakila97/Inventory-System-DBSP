@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using System;
+using System.Data;
 using System.Data.SqlClient;
 using System.Text.RegularExpressions;
 using InventoryManagementSystemV2.Application.DAL;
