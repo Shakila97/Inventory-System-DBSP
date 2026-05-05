@@ -1,9 +1,0 @@
-C:\Users\User\source\repos\Inventory-System-DBSP\Inventory Management System v2\Inventory Management System v2\bin\Debug\Inventory Management System v2.exe.config
-C:\Users\User\source\repos\Inventory-System-DBSP\Inventory Management System v2\Inventory Management System v2\bin\Debug\Inventory Management System v2.exe
-C:\Users\User\source\repos\Inventory-System-DBSP\Inventory Management System v2\Inventory Management System v2\bin\Debug\Inventory Management System v2.pdb
-C:\Users\User\source\repos\Inventory-System-DBSP\Inventory Management System v2\Inventory Management System v2\obj\Debug\Inventory Management System v2.csproj.AssemblyReference.cache
-C:\Users\User\source\repos\Inventory-System-DBSP\Inventory Management System v2\Inventory Management System v2\obj\Debug\Inventory_Management_System_v2.Properties.Resources.resources
-C:\Users\User\source\repos\Inventory-System-DBSP\Inventory Management System v2\Inventory Management System v2\obj\Debug\Inventory Management System v2.csproj.GenerateResource.cache
-C:\Users\User\source\repos\Inventory-System-DBSP\Inventory Management System v2\Inventory Management System v2\obj\Debug\Inventory Management System v2.csproj.CoreCompileInputs.cache
-C:\Users\User\source\repos\Inventory-System-DBSP\Inventory Management System v2\Inventory Management System v2\obj\Debug\Inventory Management System v2.exe
-C:\Users\User\source\repos\Inventory-System-DBSP\Inventory Management System v2\Inventory Management System v2\obj\Debug\Inventory Management System v2.pdb
