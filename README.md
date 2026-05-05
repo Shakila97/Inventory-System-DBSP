@@ -404,9 +404,9 @@ git checkout -b feature/<your-name>-<feature>
 
 - `feature/member01-product-inventory`
 - `feature/member02-customer-login`
-- `feature/member03-sales-transaction`
-- `feature/member04-stock-trigger`
-- `feature/member05-dashboard`
+- `feature/member03/04-sales-transaction`
+- `feature/member05-stock-trigger`
+- `feature/member06-dashboard`
 
 ---
 
@@ -515,11 +515,12 @@ git commit -m "docs: update GearHost connection string setup instructions"
 
 | Member | Role | Student ID | Key Deliverables |
 |---|---|---|---|
-| Member 01 | Product & Catalog Lead | — | `Categories`, `Products` tables · `vw_LowStock` · `frmProductInventory` |
-| Member 02 | Customer & Security Lead | — | `Customers` table · `sp_UpsertCustomer` · `frmLogin` · `frmCustomerDirectory` |
-| Member 03 | Sales & Transaction Lead | — | `Sales` table · `sp_ProcessSale` (ACID) · `frmSalesTransaction` |
-| Member 04 | Stock Logic & Automation Lead | — | `SalesDetails` table · `trg_DecrementStock` · `frmStockAdjustment` |
-| Member 05 | Reports & Integration Lead | — | `DatabaseHelper.cs` · `fn_DailyRevenue` · Indexes · `frmDashboard` · `frmMainMenu` · GearHost DB admin |
+| Member 01 | Product & Catalog Lead | Anuradha- SIS/24/B2/15 | `Categories`, `Products` tables · `vw_LowStock` · `frmProductInventory` |
+| Member 02 | Customer & Security Lead |  W.I.L.Withana-SIS/24/B2/38 | `Customers` table · `sp_UpsertCustomer` · `frmLogin` · `frmCustomerDirectory` |
+| Member 03 | Sales & Transaction Lead | Lakmali Koralage-SIS/24/B2/13 | `Sales` table · `sp_ProcessSale` (ACID) · `frmSalesTransaction` |
+| Member 04 | Sales & Transaction Lead | Rashmi kanchana-SIS/24/B2/09 | `Sales` table · `sp_ProcessSale` (ACID) · `frmSalesTransaction` |
+| Member 05 | Stock Logic & Automation Lead | L.B.CHARITH JEEWAN-SIS/24/B2/36 | `SalesDetails` table · `trg_DecrementStock` · `frmStockAdjustment` |
+| Member 06 | Reports & Integration Lead | B.W.S.S.Nawarathna-SIS/24/B2/39 | `DatabaseHelper.cs` · `fn_DailyRevenue` · Indexes · `frmDashboard` · `frmMainMenu` · GearHost DB admin |
 
 ---
 
