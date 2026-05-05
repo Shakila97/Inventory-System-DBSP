@@ -515,7 +515,7 @@ git commit -m "docs: update GearHost connection string setup instructions"
 
 | Member | Role | Student ID | Key Deliverables |
 |---|---|---|---|
-| Member 01 | Product & Catalog Lead | Anuradha- SIS/24/B2/15 | `Categories`, `Products` tables · `vw_LowStock` · `frmProductInventory` |
+| Member 01 | Product & Catalog Lead | G.B.D Anuradha- SIS/24/B2/15 | `Categories`, `Products` tables · `vw_LowStock` · `frmProductInventory` |
 | Member 02 | Customer & Security Lead |  W.I.L.Withana-SIS/24/B2/38 | `Customers` table · `sp_UpsertCustomer` · `frmLogin` · `frmCustomerDirectory` |
 | Member 03 | Sales & Transaction Lead | Lakmali Koralage-SIS/24/B2/13 | `Sales` table · `sp_ProcessSale` (ACID) · `frmSalesTransaction` |
 | Member 04 | Sales & Transaction Lead | Rashmi kanchana-SIS/24/B2/09 | `Sales` table · `sp_ProcessSale` (ACID) · `frmSalesTransaction` |
