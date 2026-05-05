@@ -1,0 +1,96 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\SHAKILA\\source\\repos\\Inventory-System-DBSP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{281DF79A-9347-43D6-9F52-C899713BBBD7}|Inventory Management System IMS.csproj|C:\\Users\\SHAKILA\\source\\repos\\Inventory-System-DBSP\\presentation\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{281DF79A-9347-43D6-9F52-C899713BBBD7}|Inventory Management System IMS.csproj|solutionrelative:presentation\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{281DF79A-9347-43D6-9F52-C899713BBBD7}|Inventory Management System IMS.csproj|c:\\users\\shakila\\source\\repos\\inventory-system-dbsp\\presentation\\frmdashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{281DF79A-9347-43D6-9F52-C899713BBBD7}|Inventory Management System IMS.csproj|solutionrelative:presentation\\frmdashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{281DF79A-9347-43D6-9F52-C899713BBBD7}|Inventory Management System IMS.csproj|c:\\users\\shakila\\source\\repos\\inventory-system-dbsp\\application\\dal\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{281DF79A-9347-43D6-9F52-C899713BBBD7}|Inventory Management System IMS.csproj|solutionrelative:application\\dal\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{281DF79A-9347-43D6-9F52-C899713BBBD7}|Inventory Management System IMS.csproj|c:\\users\\shakila\\source\\repos\\inventory-system-dbsp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{281DF79A-9347-43D6-9F52-C899713BBBD7}|Inventory Management System IMS.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmDashboard.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\SHAKILA\\source\\repos\\Inventory-System-DBSP\\Presentation\\frmDashboard.Designer.cs",
+              "RelativeDocumentMoniker": "Presentation\\frmDashboard.Designer.cs",
+              "ToolTip": "C:\\Users\\SHAKILA\\source\\repos\\Inventory-System-DBSP\\Presentation\\frmDashboard.Designer.cs",
+              "RelativeToolTip": "Presentation\\frmDashboard.Designer.cs",
+              "ViewState": "AgIAAEsBAAAAAAAAAAAAAEsBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T20:02:57.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DatabaseHelper.cs",
+              "DocumentMoniker": "C:\\Users\\SHAKILA\\source\\repos\\Inventory-System-DBSP\\Application\\DAL\\DatabaseHelper.cs",
+              "RelativeDocumentMoniker": "Application\\DAL\\DatabaseHelper.cs",
+              "ToolTip": "C:\\Users\\SHAKILA\\source\\repos\\Inventory-System-DBSP\\Application\\DAL\\DatabaseHelper.cs",
+              "RelativeToolTip": "Application\\DAL\\DatabaseHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T20:04:37.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmMainMenu.cs",
+              "DocumentMoniker": "C:\\Users\\SHAKILA\\source\\repos\\Inventory-System-DBSP\\Presentation\\frmMainMenu.cs",
+              "RelativeDocumentMoniker": "Presentation\\frmMainMenu.cs",
+              "ToolTip": "C:\\Users\\SHAKILA\\source\\repos\\Inventory-System-DBSP\\Presentation\\frmMainMenu.cs",
+              "RelativeToolTip": "Presentation\\frmMainMenu.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAQwEkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T15:42:24.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\SHAKILA\\source\\repos\\Inventory-System-DBSP\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\SHAKILA\\source\\repos\\Inventory-System-DBSP\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T14:02:51.57Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
